@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+:root {
+    --navy-blue: #0a192f;
+    --light-navy: #172a45;
+    --lightest-navy: #303C55;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --accent-blue: #64ffda;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--navy-blue);
+}
+
+.registration-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(10, 25, 47, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--navy-blue);
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--light-navy);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--light-slate);
+    border-radius: 8px;
+    background-color: var(--white);
+    color: var(--navy-blue);
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.2);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--navy-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--light-navy);
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: var(--navy-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: var(--accent-blue);
+    text-decoration: underline;
+}
+
+.password-toggle {
+    background: none;
+    border: none;
+    color: var(--slate);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+    position: absolute;
+    right: 5px;
+    top: 70%;
+    transform: translateY(-50%);
+    width: auto;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: var(--accent-blue);
+}
