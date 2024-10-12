@@ -14,11 +14,11 @@
         <form id="registrationForm" action ="insertUser" method = "post">
             <div class="input-container">
                 <label for="username">Username</label>
-                <input type="text" id="username" name="user_name" required>
+                <input type="text" id="username" name="username" required>
             </div>
             <div class="input-container">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="user_email" required>
+                <input type="email" id="email" name="email" required>
             </div>
             <div class="input-container">
                 <label for="contactNumber">Contact Number</label>
